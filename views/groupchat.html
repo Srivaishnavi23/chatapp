@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Chat Dashboard</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 id="head">Chat App</h1>
+        </div>
+        <div class="user-section">
+            <h3 id="inviteUser">Group Participants:</h3>
+            <ul id="groupuserlist"></ul>
+        </div>
+        <div class="group-name-section">
+            <h3 id="groupName"></h3>
+        </div>
+        <div class="chat-messages">
+            <h2>Messages:</h2>
+            <ul id="groupMessage-list"></ul>
+        </div>
+        <div class="chat-form-container">
+            <form id="chat-form">
+                <input type="file" id="file">
+                <button class="btn" id="uploadbtn">Upload</button>
+                <input type="text" id="grpMsg" placeholder="Enter message" autocomplete="off" name="message" required>
+                <button class="btn" id="add-groupchat">Send</button>
+            </form>
+        </div>
+    </div>
+    <button id="leaveGroup" class="leave">Back</button>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script> -->
+    <!-- <script src="/chat.js"></script> -->
+    <script src="/groupChat.js"></script>
+</body>
+
+</html>       
+

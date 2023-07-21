@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Group-Chat_App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+        <div data-toggle="validator" class=" form-div container mt-5 ">
+            <form onsubmit="signUp(event)" >
+        <form id="my-form">
+            <div class="msg"></div>
+            <div>
+                <label for="Name" class="form-label" >Name:</label>
+                <input type="text" class="form-control" id="Name" aria-describedby="emailHelp" required>
+            </div>
+
+            <div>
+                <label for="Email" class="form-label" >Email:</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+            </div>
+
+            <div>
+                <label for="Phone" class="form-label" >Phone:</label>
+                <input type="phone" class="form-control" id="Phone" aria-describedby="emailHelp" required>
+            </div>
+
+            <div>
+                <label for="Password" class="form-label" >Password:</label>
+              <input type="text" class="form-control" id="Password" aria-describedby="emailHelp" required>
+            </div>
+
+            <input id="submit" type="submit" value="Sign Up" class="btn">
+            <p id="error-message"></p>
+        </form>
+
+        <p>Existing user? <a href="/login">Login</a></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>
